@@ -1,0 +1,18 @@
+// Setup
+@import '_variant/variables';
+@import '_variant/fonts'; 
+@import '_variant/setup';
+
+// blocks
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/mail';
+@import 'blocks/sidebar';
+@import 'blocks/side-menu';
+@import 'blocks/slider';
+@import 'blocks/lined-text';
+@import 'blocks/filter';
+@import 'blocks/product';
+@import 'blocks/product-card';
+@import 'blocks/btn';
+@import 'blocks/collection';

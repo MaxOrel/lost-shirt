@@ -1,0 +1,15 @@
+.side-menu__item {
+    margin-bottom: 20px;
+}
+
+.side-menu__link {
+    font-size: 20px;
+    color: $yellow;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'alegreya_sans';
+
+    &:hover {
+        color: $red;
+    }
+}

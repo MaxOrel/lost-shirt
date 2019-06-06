@@ -1,0 +1,30 @@
+'use strict';
+
+module.exports = function() {
+  $.gulp.task('sprite:svg', function() {
+    return $.gulp.src('./source/images/icon/*.svg')
+      .pipe($.gp.svgmin({
+        js2svg: {
+          pretty: true
+        }
+      }))
+      .pipe($.gp.cheerio({
+        run: function ($) {
+          $('[fill]').removeAttr('fill');
+          $('[stroke]').removeAttr('stroke');
+          $('[style]').removeAttr('style');
+        },
+        parserOptions: { xmlMode: true }
+      }))
+      .pipe($.gp.replace('&gt;', '>'))
+      .pipe($.gp.svgSprite({
+        mode: {
+          symbol: {
+            sprite: "../sprite3.svg"
+          }
+        }
+      }))
+      .pipe($.gulp.dest('./source/images/icon/'))
+  })
+
+};

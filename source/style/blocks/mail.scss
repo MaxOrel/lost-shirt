@@ -1,0 +1,15 @@
+.mail {
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+}
+
+.mail__title {
+    margin-bottom: 3px;
+}
+
+.mail__content {
+    background: #212121;
+    color: $yellow;
+    padding: 5px 10px;
+}

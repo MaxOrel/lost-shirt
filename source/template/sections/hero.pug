@@ -1,0 +1,62 @@
+section.hero
+  .container
+    header.header
+      a.logo(href='#')
+        img.logo__pic(src='./assets/img/content/logos/logo-main.png', alt='lost shirt logo')
+      a.mail(href='mailto:lostinspace@mail.ru')
+        .mail__title По всем вопросам пишите на:
+        .mail__content lostinspace@mail.ru
+    .hero__content
+      ul.slider
+        li.slider__item.slider__item_style_tshirts.slider__item_visible
+          picture.slider__images-set
+            source(srcset="/assets/img/content/hero/slider_pic_1.webp" type="image/webp")
+            img( src="/assets/img/content/hero/slider_pic_1.png" alt="Фото мужчин в футболках").slider__pic
+          .slider__text
+            h1.lined-text
+              span.lined-text__word три
+              span.lined-text__word футболки
+              span.lined-text__word.lined-text__word_color_yellow по цене
+              span.lined-text__word.lined-text__word_color_yellow двух
+        li.slider__item.slider__item_style_games
+          picture.slider__images-set
+            source(srcset="/assets/img/content/hero/slider_pic_2.webp" type="image/webp")
+            img( src="/assets/img/content/hero/slider_pic_2.png" alt="Фото мужчин в футболках").slider__pic
+          .slider__text
+            h1.lined-text.lined-text_no-indent
+              span.lined-text__word Любимые игры
+              span.lined-text__word.lined-text__word_color_yellow на лучших футболках
+        li.slider__item.slider__item_style_presents
+          picture.slider__images-set
+            source(srcset="/assets/img/content/hero/slider_pic_3.webp" type="image/webp")
+            img( src="/assets/img/content/hero/slider_pic_3.png" alt="Фото мужчины и женщины в футболках").slider__pic
+          .slider__text
+            h1.lined-text.lined-text_no-indent
+              span.lined-text__word Подарки
+              span.lined-text__word.lined-text__word_color_yellow для любимых
+  aside.sidebar
+    a.sidebar__hamburger(href='#')
+      svg.sidebar__hamburger-icon
+        use(xlink:href='./assets/img/icons-sprite.svg#bars')
+    .sidebar__header
+      a.logo(href='#')
+        img.logo__image(src='./assets/img/content/logos/logo-main.png', alt='')
+      a.sidebar__close(href='#')
+        svg.sidebar__close-icon
+          use(xlink:href='./assets/img/icons-sprite.svg#cross')
+    nav.side-menu.sidebar__menu
+      ul.side-menu__list
+        li.side-menu__item
+          a.side-menu__link(href='#') Детская коллекция
+        li.side-menu__item
+          a.side-menu__link(href='#') Мужская коллекция
+        li.side-menu__item
+          a.side-menu__link(href='#') Женская коллекция
+        li.side-menu__item
+          a.side-menu__link(href='#') Популярные принты
+        li.side-menu__item
+          a.side-menu__link(href='#') Новые принты
+        li.side-menu__item
+          a.side-menu__link(href='#') Специальные предложения
+        li.side-menu__item
+          a.side-menu__link(href='#') Скоро в продаже
