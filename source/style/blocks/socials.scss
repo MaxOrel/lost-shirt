@@ -1,0 +1,29 @@
+.socials {
+    display: flex;
+  }
+  
+  .socials__item {
+    margin-right: 50px;
+    width: 38px;
+    height: 38px;
+  }
+  
+  .socials__item:last-child {
+    margin-right: 0px;
+  }
+  
+  .socials__link {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  .socials__link:hover .socials__icon  {
+    fill:$red;
+  }
+  
+  .socials__icon {
+    width: 100%;
+    height: 100%;
+    transition: fill 0.3s;
+  }

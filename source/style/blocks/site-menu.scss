@@ -1,0 +1,51 @@
+.site-menu{
+    margin-bottom: 120px;
+}
+.site-menu__sections {
+    display: flex;
+}
+
+.site-menu__col {
+    margin-right: 20px;
+    width: calc(100%/12*3 - 20px);
+}
+
+.site-menu__col:last-child {
+    margin-right: 0px;
+}
+
+.site-menu__title {
+    font-family: 'yanone';
+    font-size: 24px;
+    font-weight: bold;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.site-menu__item {
+    margin-bottom: 15px;
+}
+
+.site-menu__link {
+    color: #737373;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.site-menu__link:hover {
+    color: $red;
+}
+
+.site-menu__text {
+    font-size: 15px;
+    color: $black;
+    margin-bottom: 30px;
+}
+
+.site-menu__text-row {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}

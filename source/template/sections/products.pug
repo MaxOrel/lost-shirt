@@ -2,15 +2,15 @@ section.products
     .container
         ul.filter
             li.filter__item.filter__item_active
-                a.filter__link(href='#', data-filter='popular') Популярное
+                button.filter__button(type="button", data-filter='popular' aria-label="Отсортировать по популярности") Популярное
             li.filter__item
-                a.filter__link(href='#', data-filter='new') Особые
+                button.filter__button(type="button", data-filter='new' aria-label="Отсортировать по новинкам") Новинки
             li.filter__item
-                a.filter__link(href='#', data-filter='') Бестселлеры
+                button.filter__button(type="button", data-filter='bestseller' aria-label="Отсортировать по продоваемости") Бестселлеры
             li.filter__item
-                a.filter__link(href='#', data-filter='specials') Специальные предложения
+                button.filter__button(type="button", data-filter='specials' aria-label="Отсортировать по скидкам") Специальные предложения
             li.filter__item
-                a.filter__link(href='#', data-filter='soon') Скоро в продаже
+                button.filter__button(type="button", data-filter='soon' aria-label="Отсортировать по поступлению") Скоро в продаже
         ul.products__list
             li.products__item.product-card
                 .product-card__price

@@ -1,0 +1,19 @@
+.footer-banner {
+    display: flex;
+    margin-bottom: 95px;
+  }
+  
+  .footer-banner__col {
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  .footer-banner__col:last-child {
+    margin-right: 0px;
+  }
+  .footer-banner__col_theme_sosial {
+    background: url('/assets/img/bg/pattern.png') center center / 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

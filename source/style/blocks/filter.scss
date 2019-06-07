@@ -13,7 +13,7 @@
     margin-right: 0;
   }
   
-  .filter__link {
+  .filter__button {
     font-family: 'yanone';
     text-transform: uppercase;
     padding: 3px 21px;
@@ -22,13 +22,16 @@
     font-weight: bold;
     display: inline-block;
     text-decoration: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
   }
   
-  .filter__link:hover {
+  .filter__button:hover {
     color: $red;
   }
   
-  .filter__item_active .filter__link {
+  .filter__item_active .filter__button {
     color: $yellow;
     background: $black;
   }
