@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mr. Burger - Магазин натуральных бургеров</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="hero">
+        <div class="container">
+          <header class="header"><a class="logo" href="#"><img class="logo__pic" src="./assets/img/content/logos/logo-main.png" alt="lost shirt logo"></a><a class="mail" href="mailto:lostinspace@mail.ru">
+              <div class="mail__title">По всем вопросам пишите на:</div>
+              <div class="mail__content">lostinspace@mail.ru</div></a></header>
+          <div class="hero__content">
+            <ul class="slider">
+              <li class="slider__item slider__item_style_tshirts slider__item_visible">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/content/hero/slider_pic_1.webp" type="image/webp"><img class="slider__pic" src="./assets/img/content/hero/slider_pic_1.png" alt="Фото мужчин в футболках">
+                </picture>
+                <div class="slider__text">
+                  <h1 class="lined-text"><span class="lined-text__word">три</span><span class="lined-text__word">футболки</span><span class="lined-text__word lined-text__word_color_yellow">по цене</span><span class="lined-text__word lined-text__word_color_yellow">двух</span></h1>
+                </div>
+              </li>
+              <li class="slider__item slider__item_style_games">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/content/hero/slider_pic_2.webp" type="image/webp"><img class="slider__pic" src="./assets/img/content/hero/slider_pic_2.png" alt="Фото мужчин в футболках">
+                </picture>
+                <div class="slider__text">
+                  <h1 class="lined-text lined-text_no-indent"><span class="lined-text__word">Любимые игры</span><span class="lined-text__word lined-text__word_color_yellow">на лучших футболках</span></h1>
+                </div>
+              </li>
+              <li class="slider__item slider__item_style_presents">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/content/hero/slider_pic_3.webp" type="image/webp"><img class="slider__pic" src="./assets/img/content/hero/slider_pic_3.png" alt="Фото мужчины и женщины в футболках">
+                </picture>
+                <div class="slider__text">
+                  <h1 class="lined-text lined-text_no-indent"><span class="lined-text__word">Подарки</span><span class="lined-text__word lined-text__word_color_yellow">для любимых</span></h1>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <aside class="sidebar"><a class="sidebar__hamburger" href="#">
+            <svg class="sidebar__hamburger-icon">
+              <use xlink:href="./assets/img/icons-sprite.svg#bars"></use>
+            </svg></a>
+          <div class="sidebar__header"><a class="logo" href="#"><img class="logo__image" src="./assets/img/content/logos/logo-main.png" alt=""></a><a class="sidebar__close" href="#">
+              <svg class="sidebar__close-icon">
+                <use xlink:href="./assets/img/icons-sprite.svg#cross"></use>
+              </svg></a></div>
+          <nav class="side-menu sidebar__menu">
+            <ul class="side-menu__list">
+              <li class="side-menu__item"><a class="side-menu__link" href="#">Детская коллекция</a></li>
+              <li class="side-menu__item"><a class="side-menu__link" href="#">Мужская коллекция</a></li>
+              <li class="side-menu__item"><a class="side-menu__link" href="#">Женская коллекция</a></li>
+              <li class="side-menu__item"><a class="side-menu__link" href="#">Популярные принты</a></li>
+              <li class="side-menu__item"><a class="side-menu__link" href="#">Новые принты</a></li>
+              <li class="side-menu__item"><a class="side-menu__link" href="#">Специальные предложения</a></li>
+              <li class="side-menu__item"><a class="side-menu__link" href="#">Скоро в продаже</a></li>
+            </ul>
+          </nav>
+        </aside>
+      </section>
+      <section class="products">
+        <div class="container">
+          <ul class="filter">
+            <li class="filter__item filter__item_active">
+              <button class="filter__button" type="button" data-filter="*" aria-label="Показать все товары">Все</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button" data-filter=".popular" aria-label="Отсортировать по популярности">Популярное</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button" data-filter=".new" aria-label="Отсортировать по новинкам">Новинки</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button" data-filter=".bestseller" aria-label="Отсортировать по продоваемости">Бестселлеры</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button" data-filter=".specials" aria-label="Отсортировать по скидкам">Специальные предложения</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button" data-filter=".soon" aria-label="Отсортировать по поступлению">Скоро в продаже</button>
+            </li>
+          </ul>
+          <ul class="products__list">
+            <li class="products__item product-card new">
+              <div class="product-card__price">
+                <div class="product-card__price-amount">1 800</div>
+              </div>
+              <div class="product-card__content">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/tshirts/tshirt_01.webp" type="image/webp"><img class="product-card__img" src="./assets/img/tshirts/tshirt_01.png" alt="Фото футболоки с принтом лошади">
+                </picture>
+                <div class="product-card__desc">
+                  <div class="product-card__desc-text">Мужская футболка 3D с принтом. Летающие черепахи.</div><a class="btn" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="products__item product-card new">
+              <div class="product-card__price">
+                <div class="product-card__price-amount">1 800</div>
+              </div>
+              <div class="product-card__content">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/tshirts/tshirt_02.webp" type="image/webp"><img class="product-card__img" src="./assets/img/tshirts/tshirt_02.png" alt="Фото футболоки с принтом лошади">
+                </picture>
+                <div class="product-card__desc">
+                  <div class="product-card__desc-text">Мужская футболка 3D с принтом. Летающие черепахи.</div><a class="btn" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="products__item popular new products__item_color_black products__item_size_double product-card">
+              <div class="product-card__price">
+                <div class="product-card__price-amount">1 800</div>
+              </div>
+              <div class="product-card__content">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/tshirts/tshirt_03.webp" type="image/webp"><img class="product-card__img" src="./assets/img/tshirts/tshirt_03.png" alt="Фото футболоки с принтом лошади">
+                </picture>
+                <div class="product-card__desc">
+                  <div class="product-card__desc-text">Мужская футболка 3D с принтом. Летающие черепахи.</div><a class="btn" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="products__item popular new products__item_color_black products__item_size_double product-card">
+              <div class="product-card__price">
+                <div class="product-card__price-amount">1 800</div>
+              </div>
+              <div class="product-card__content">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/tshirts/tshirt_04.webp" type="image/webp"><img class="product-card__img" src="./assets/img/tshirts/tshirt_04.png" alt="Фото футболоки с принтом лошади">
+                </picture>
+                <div class="product-card__desc">
+                  <div class="product-card__desc-text">Мужская футболка 3D с принтом. Летающие черепахи.</div><a class="btn" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="products__item product-card specials bestseller new">
+              <div class="product-card__price">
+                <div class="product-card__price-amount">1 800</div>
+              </div>
+              <div class="product-card__content">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/tshirts/tshirt_05.webp" type="image/webp"><img class="product-card__img" src="./assets/img/tshirts/tshirt_05.png" alt="Фото футболоки с принтом лошади">
+                </picture>
+                <div class="product-card__desc">
+                  <div class="product-card__desc-text">Мужская футболка 3D с принтом. Летающие черепахи.</div><a class="btn" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+            <li class="products__item product-card specials new">
+              <div class="product-card__price">
+                <div class="product-card__price-amount">1 800</div>
+              </div>
+              <div class="product-card__content">
+                <picture class="slider__images-set">
+                  <source srcset="./assets/img/tshirts/tshirt_06.webp" type="image/webp"><img class="product-card__img" src="./assets/img/tshirts/tshirt_06.png" alt="Фото футболоки с принтом лошади">
+                </picture>
+                <div class="product-card__desc">
+                  <div class="product-card__desc-text">Мужская футболка 3D с принтом. Летающие черепахи.</div><a class="btn" href="#">Подробнее</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="collections">
+        <div class="container">
+          <ul class="collections__list">
+            <li class="collections__item collections__item_type_guys">
+              <div class="collections__link">
+                <h2 class="collections__title">Мужская коллекция</h2>
+                <div class="collections__desc">Оригинальные, шуточные, полезные и мужественные футболки.</div><a class="btn" href="#">просмотреть</a>
+              </div>
+            </li>
+            <li class="collections__item collections__item_type_girls">
+              <div class="collections__link">
+                <h2 class="collections__title">Женская коллекция</h2>
+                <div class="collections__desc">Подари своей девушке прикольную футболку с надписями, и ты подаришь ей, как минимум, еще одну улыбку.</div><a class="btn" href="#">просмотреть</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container footer__container">
+          <nav class="site-menu">
+            <ul class="site-menu__sections">
+              <li class="site-menu__col">
+                <h3 class="site-menu__title">Информация</h3>
+                <ul class="site-menu__list">
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">О магазине</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Адреса магазинов</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Как сделать заказ?</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Обмен и возврат</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Отзывы</a></li>
+                </ul>
+              </li>
+              <li class="site-menu__col">
+                <h3 class="site-menu__title">Футболки</h3>
+                <ul class="site-menu__list">
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Популярное</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Новинки</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Бестселлеры</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Специальные предложения</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Скоро в продаже</a></li>
+                </ul>
+              </li>
+              <li class="site-menu__col">
+                <h3 class="site-menu__title">Коллекции</h3>
+                <ul class="site-menu__list">
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Детская коллекция</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Женская коллекция</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Мужская коллекция</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Лучшие принты 2018 года</a></li>
+                  <li class="site-menu__item"><a class="site-menu__link" href="#">Лучшие принты 2019 года</a></li>
+                </ul>
+              </li>
+              <li class="site-menu__col">
+                <h3 class="site-menu__title">Контактная информация</h3>
+                <div class="site-menu__text">Санкт-Петербург, <br>ул. Жуковского, д. 12</div>
+                <div class="site-menu__text"><a class="site-menu__text-row" href="tel.:+78123157235">Телефон: 8 (812) 315-72-35</a><a class="site-menu__text-row" href="mailto:support@yourwebsite.com">Email: support@yourwebsite.com</a></div>
+              </li>
+            </ul>
+          </nav>
+          <section class="footer-banner">
+            <div class="footer-banner__col"><a class="banner-title" href="#">Лучшие принты <br>              2019 года</a></div>
+            <div class="footer-banner__col footer-banner__col_theme_sosial">
+              <ul class="socials">
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                      <use xlink:href="./assets/img/icons-sprite.svg#fb"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                      <use xlink:href="./assets/img/icons-sprite.svg#twitter"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                      <use xlink:href="./assets/img/icons-sprite.svg#insta"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link" href="#">
+                    <svg class="socials__icon">
+                      <use xlink:href="./assets/img/icons-sprite.svg#pin"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
