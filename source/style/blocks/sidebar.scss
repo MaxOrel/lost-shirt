@@ -12,7 +12,7 @@
     flex-direction: column;
     transition: width .3s;
 
-    &--opened {
+    &_opened {
         width: 325px;
         padding: 0 3% 0 4%;
     }

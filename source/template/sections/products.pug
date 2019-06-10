@@ -2,78 +2,80 @@ section.products
     .container
         ul.filter
             li.filter__item.filter__item_active
-                button.filter__button(type="button", data-filter='popular' aria-label="Отсортировать по популярности") Популярное
+                button.filter__button(type="button", data-filter='*' aria-label="Показать все товары") Все
             li.filter__item
-                button.filter__button(type="button", data-filter='new' aria-label="Отсортировать по новинкам") Новинки
+                button.filter__button(type="button", data-filter='.popular' aria-label="Отсортировать по популярности") Популярное
             li.filter__item
-                button.filter__button(type="button", data-filter='bestseller' aria-label="Отсортировать по продоваемости") Бестселлеры
+                button.filter__button(type="button", data-filter='.new' aria-label="Отсортировать по новинкам") Новинки
             li.filter__item
-                button.filter__button(type="button", data-filter='specials' aria-label="Отсортировать по скидкам") Специальные предложения
+                button.filter__button(type="button", data-filter='.bestseller' aria-label="Отсортировать по продоваемости") Бестселлеры
             li.filter__item
-                button.filter__button(type="button", data-filter='soon' aria-label="Отсортировать по поступлению") Скоро в продаже
+                button.filter__button(type="button", data-filter='.specials' aria-label="Отсортировать по скидкам") Специальные предложения
+            li.filter__item
+                button.filter__button(type="button", data-filter='.soon' aria-label="Отсортировать по поступлению") Скоро в продаже
         ul.products__list
-            li.products__item.product-card
+            li.products__item.product-card.new
                 .product-card__price
                     .product-card__price-amount 1 800
                 .product-card__content
                     picture.slider__images-set
-                        source(srcset="/assets/img/tshirts/tshirt_01.webp" type="image/webp")
-                        img( src="/assets/img/tshirts/tshirt_01.png", alt="Фото футболоки с принтом лошади").product-card__img
+                        source(srcset="./assets/img/tshirts/tshirt_01.webp" type="image/webp")
+                        img( src="./assets/img/tshirts/tshirt_01.png", alt="Фото футболоки с принтом лошади").product-card__img
                     .product-card__desc
                         .product-card__desc-text
                             | Мужская футболка 3D с принтом. Летающие черепахи.
                         a.btn(href='#') Подробнее
-            li.products__item.product-card
+            li.products__item.product-card.new
                 .product-card__price
                     .product-card__price-amount 1 800
                 .product-card__content
                     picture.slider__images-set
-                        source(srcset="/assets/img/tshirts/tshirt_02.webp" type="image/webp")
-                        img( src="/assets/img/tshirts/tshirt_02.png", alt="Фото футболоки с принтом лошади").product-card__img
+                        source(srcset="./assets/img/tshirts/tshirt_02.webp" type="image/webp")
+                        img( src="./assets/img/tshirts/tshirt_02.png", alt="Фото футболоки с принтом лошади").product-card__img
                     .product-card__desc
                         .product-card__desc-text
                             | Мужская футболка 3D с принтом. Летающие черепахи.
                         a.btn(href="#") Подробнее
-            li.products__item.products__item_color_black.products__item_size_double.product-card
+            li.products__item.popular.new.products__item_color_black.products__item_size_double.product-card
                 .product-card__price
                     .product-card__price-amount 1 800
                 .product-card__content
                     picture.slider__images-set
-                        source(srcset="/assets/img/tshirts/tshirt_03.webp" type="image/webp")
-                        img( src="/assets/img/tshirts/tshirt_03.png", alt="Фото футболоки с принтом лошади").product-card__img
+                        source(srcset="./assets/img/tshirts/tshirt_03.webp" type="image/webp")
+                        img( src="./assets/img/tshirts/tshirt_03.png", alt="Фото футболоки с принтом лошади").product-card__img
                     .product-card__desc
                         .product-card__desc-text
                             | Мужская футболка 3D с принтом. Летающие черепахи.
                         a.btn(href="#") Подробнее
-            li.products__item.products__item_color_black.products__item_size_double.product-card
+            li.products__item.popular.new.products__item_color_black.products__item_size_double.product-card
                 .product-card__price
                     .product-card__price-amount 1 800
                 .product-card__content
                     picture.slider__images-set
-                        source(srcset="/assets/img/tshirts/tshirt_04.webp" type="image/webp")
-                        img( src="/assets/img/tshirts/tshirt_04.png", alt="Фото футболоки с принтом лошади").product-card__img
+                        source(srcset="./assets/img/tshirts/tshirt_04.webp" type="image/webp")
+                        img( src="./assets/img/tshirts/tshirt_04.png", alt="Фото футболоки с принтом лошади").product-card__img
                     .product-card__desc
                         .product-card__desc-text
                             | Мужская футболка 3D с принтом. Летающие черепахи.
                         a.btn(href="#") Подробнее
-            li.products__item.product-card
+            li.products__item.product-card.specials.bestseller.new
                 .product-card__price
                     .product-card__price-amount 1 800
                 .product-card__content
                     picture.slider__images-set
-                        source(srcset="/assets/img/tshirts/tshirt_05.webp" type="image/webp")
-                        img( src="/assets/img/tshirts/tshirt_05.png", alt="Фото футболоки с принтом лошади").product-card__img
+                        source(srcset="./assets/img/tshirts/tshirt_05.webp" type="image/webp")
+                        img( src="./assets/img/tshirts/tshirt_05.png", alt="Фото футболоки с принтом лошади").product-card__img
                     .product-card__desc
                         .product-card__desc-text
                             | Мужская футболка 3D с принтом. Летающие черепахи.
                         a.btn(href="#") Подробнее
-            li.products__item.product-card
+            li.products__item.product-card.specials.new
                 .product-card__price
                     .product-card__price-amount 1 800
                 .product-card__content
                     picture.slider__images-set
-                        source(srcset="/assets/img/tshirts/tshirt_06.webp" type="image/webp")
-                        img( src="/assets/img/tshirts/tshirt_06.png", alt="Фото футболоки с принтом лошади").product-card__img
+                        source(srcset="./assets/img/tshirts/tshirt_06.webp" type="image/webp")
+                        img( src="./assets/img/tshirts/tshirt_06.png", alt="Фото футболоки с принтом лошади").product-card__img
                     .product-card__desc
                         .product-card__desc-text
                             | Мужская футболка 3D с принтом. Летающие черепахи.

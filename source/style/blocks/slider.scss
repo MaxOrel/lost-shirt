@@ -7,6 +7,9 @@
     height: 100%;
     opacity: 0;
     transition: opacity .3s;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .slider__item_visible {
